@@ -1,4 +1,7 @@
 import { defineConfig } from 'vite';
+import injectHTML from 'vite-plugin-html-inject';
+import tsconfigPaths from 'vite-tsconfig-paths';
+
 const path = require('path');
 export default defineConfig({
   base: './',
@@ -10,5 +13,9 @@ export default defineConfig({
       '@': path.resolve(__dirname, './'),
       '~': path.resolve(__dirname, './')
     }
-  }
+  },
+  plugins: [
+    injectHTML(),    
+    tsconfigPaths(),    
+  ],
 });

@@ -1,3 +1,18 @@
 $font-size__base: 10px;
 $font-family: 'Spartan', sans-serif;
 $transition: all 0.3s ease-in-out;
+
+// 컬러
+:root {
+    --color-primary: #FBC02D;
+    --color-secondary: #2ECC71;
+    --color-sub: #9999FF;
+    --color-lightTheme-text:#212121;
+    --color-darkTheme-text: #F5F5F5;
+    --color-lightTheme-bg: #ffffff;
+    --color-darkTheme-bg: #424242;
+
+    --color-light-gray: #cccccc;
+    --color-gray: #444444;
+    --color-black: #1a1a1a;
+}

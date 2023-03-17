@@ -1,67 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./assets/FAV.11b04ece.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
-    <title>Frontend Masters Calculator App</title>
-    <script type="module" crossorigin src="./assets/index.4de155d6.js"></script>
-    <link rel="stylesheet" href="./assets/index.f7f22190.css">
-  </head>
-  <body class="flexed-center">
-    <pre id="dump"></pre>
-    <pre id="state"></pre>
-    <main class="calculator">
-      <div class="header">
-        <h1 class="lowercase">calc</h1>
-        <div class="theme-controls">
-          <h4>Theme</h4>
-          <div class="theme-switcher">
-            <div class="theme-switcher__background"></div>
-            <div>
-              <label for="light-mode">1</label>
-              <input id="light-mode" type="radio" name="theme-control" data-mode="light">
-            </div>
-            <div>
-              <label for="contrast-mode">2</label>
-              <input id="contrast-mode" type="radio" name="theme-control" data-mode="contrast">
-            </div>
-            <div>
-              <label for="dark-mode">3</label>
-              <input id="dark-mode" type="radio" name="theme-control" data-mode="dark">
-            </div>
-          </div>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./assets/FAV.11b04ece.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend UI library 2023</title>
+  <script type="module" crossorigin src="./assets/index.059abf1c.js"></script>
+  <link rel="stylesheet" href="./assets/index.8ffd8425.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h2>UI component library 2023</h2>
+    <div class="change-theme">
+      <label class="theme-mode" for="setMode">
+          <span class="mode-text"></span>
+          <input id="setMode" role="switch" type="checkbox" name="theme" />        
+      </label>
+  </div>
+
+    <section class="area-common">
+      <div class="component-box">
+        <h3 class="component-name">컬러 시스템</h3>      
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./assets/FAV.11b04ece.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <title>UI library 2023 - 컬러시스템</title>
+</head>
+
+<body>
+  <div class="palette">
+    <div class="color-box">
+      <span class="color bg-white"></span>
+      <p>white</p>
+    </div>
+    <div class="color-box">
+      <span class="color bg-gray"></span>
+      <p>gray</p>
+    </div>
+    <div class="color-box">
+      <span class="color bg-black"></span>
+      <p>black</p>
+    </div>
+    <div class="color-box">
+      <span class="color bg-primary"></span>
+      <p>primary</p>
+    </div>
+    <div class="color-box">
+      <span class="color bg-secondary"></span>
+      <p>secondary</p>
+    </div>
+    <div class="color-box">
+      <span class="color bg-sub"></span>
+      <p>sub</p>
+    </div>
+  </div>
+  
+</body>
+
+</html>        
       </div>
-      <!-- <div class="output radius shadowed--light flexed-center"><h2></h2></div> -->
-      <div class="output radius shadowed--light flexed-center">
-        <label for="calculations">Calculator Value</label>
-        <input class="radius" type="text" id="calculations" name="calculations" value="0" readonly>
+
+      <div class="component-box">
+        <h3 class="component-name">시스템 컴포넌트</h3>
+        
       </div>
-      <div class="buttons radius shadowed--light">
-        <button type="button" class="button" value="7" data-type="int">7</button>
-        <button type="button" class="button" value="8" data-type="int">8</button>
-        <button type="button" class="button" value="9" data-type="int">9</button>
-        <button type="button" class="uppercase button" value="BACKSPACE" data-type="exe" data-button="correction">Del</button>
-        <button type="button" class="button" value="4" data-type="int">4</button>
-        <button type="button" class="button" value="5" data-type="int">5</button>
-        <button type="button" class="button" value="6" data-type="int">6</button>
-        <button type="button" class="button" value="+" data-type="ops">+</button>
-        <button type="button" class="button" value="1" data-type="int">1</button>
-        <button type="button" class="button" value="2" data-type="int">2</button>
-        <button type="button" class="button" value="3" data-type="int">3</button>
-        <button type="button" class="button" value="-" data-type="ops">-</button>
-        <button type="button" class="button" value="." data-type="int">.</button>
-        <button type="button" class="button" value="0" data-type="int">0</button>
-        <button type="button" class="button" value="/" data-type="ops">/</button>
-        <button type="button" class="button" value="*" data-type="ops">x</button>
-        <button type="button" class="uppercase button reset" value="ESCAPE" data-type="exe" data-button="correction">Clear</button>
-        <button type="button" class="button" value="ENTER" data-type="exe" data-button="submission">=</button>
+
+      <div class="component-box">
+        <h3 class="component-name">텍스트필드</h3>
+        
       </div>
-    </main>
-    
-  </body>
+
+      <div class="component-box">
+        <h3 class="component-name">버튼</h3>
+        
+      </div>
+
+      <div class="component-box">
+        <h3 class="component-name">탭</h3>
+        
+      </div>
+
+      <div class="component-box">
+        <h3 class="component-name">팝업</h3>
+        
+      </div>
+
+      <div class="component-box">
+        <h3 class="component-name">모달</h3>
+        
+      </div>      
+    </section>
+  </div>
+  
+</body>
+
 </html>
