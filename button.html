@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="button-container" style="display: none;">
+  <div class="button-container">
     <!-- 비활성일 경우 버튼태그에 disabled 클래스가 공통적용됨 -->
     <button class="btn-primary square">기본 사각형 버튼</button>
     <button class="btn-primary round">기본 라운드 버튼</button>    
@@ -24,6 +24,28 @@
     <button class="btn-red round">기본 라운드 버튼</button>
 
     <button class="disabled">비활성 버튼</button>
+
+    <div class="chk-wrapper">
+      <label for="chk1">
+        <input id="chk1" type="checkbox">
+        <span>체크1</span>
+      </label>    
+      <label for="chk2">
+        <input id="chk2" type="checkbox">
+        <span>체크2</span>
+      </label>    
+    </div>    
+
+    <div class="radio-wrapper">
+      <label for="radio1">
+        <input id="radio1" type="radio" name="radioBtn">
+        <span>라디오버튼</span>
+      </label>    
+      <label for="radio2">
+        <input id="radio2" type="radio" name="radioBtn">
+        <span>라디오버튼</span>
+      </label>    
+    </div>
   </div>
 
   <script type="module" src="/main.js"></script>

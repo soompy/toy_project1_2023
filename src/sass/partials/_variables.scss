@@ -4,10 +4,10 @@ $transition: all 0.3s ease-in-out;
 
 // 컬러
 :root {
-    --color-primary: #2ECC71;
-    --color-secondary: #FBC02D;
+    --color-primary: #5465FF;
+    --color-secondary: #3F4CBF;
     --color-error: #FF2A31;
-    --color-sub: #9999FF;
+    --color-sub: #A1EF7A;
     --color-text: #212121;
     --color-basic: #ffffff;
     --color-light-gray: #eeeeee;
@@ -18,10 +18,10 @@ $transition: all 0.3s ease-in-out;
 
 body {
     &.lightMode {
-        --color-primary: #2ECC71;
-        --color-secondary: #FBC02D;
+        --color-primary: #5465FF;
+        --color-secondary: #3F4CBF;
         --color-error: #FF2A31;
-        --color-sub: #9999FF;
+        --color-sub: #A1EF7A;
         --color-text: #212121;
         --color-basic: #ffffff;
         --color-light-gray: #eeeeee;
@@ -30,10 +30,10 @@ body {
     }
 
     &.darkMode {
-        --color-primary: #30e47b;
-        --color-secondary: #facf61;
+        --color-primary: #9da6fd;
+        --color-secondary: #6670d2;
         --color-error: #FF2A31;
-        --color-sub: #c4c4fa;
+        --color-sub: #c9fab1;
         --color-text: #d7d6d6;
         --color-basic: #2f3133;
         --color-light-gray: #525151;

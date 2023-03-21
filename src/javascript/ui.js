@@ -55,3 +55,4 @@ document.addEventListener("click", function (e) {
         boxElement.classList.remove("active");
     });
 });
+
