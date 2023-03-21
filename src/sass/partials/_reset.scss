@@ -64,6 +64,7 @@ a:not([class]) {
 
 img,
 picture {
+  width: 100%;
   max-width: 100%;
   display: block;
 }
@@ -91,3 +92,5 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+

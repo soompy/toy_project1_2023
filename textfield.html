@@ -13,16 +13,68 @@
 
 <body>
   <div class="textField">
-  
-    <div class="textField-container">
-      <span class="textField-name">레이블</span>
-      <div class="inputBox">
-        <input type="text">
-        <span class="check">3 / 8</span>
-      </div>
-    </div>    
 
+    <div class="inputBox-container">
+      <span class="textField-name">레이블명</span>
+      <div class="inputBox">
+        <input type="text" class="inputText" placeholder="최대 8자까지 입력 가능" onclick="" maxlength="10">
+        <span class="check"><strong class="text-count">3</strong> / 8</span>
+      </div>
+    </div>
+
+
+    <div class="inputBox-container">
+      <span class="textField-name">레이블명</span>
+      <div class="inputBox error">
+        <input type="text" class="inputText" placeholder="최대 8자까지 입력 가능" onclick="" maxlength="10">
+        <span class="check"><strong class="text-count">3</strong> / 8</span>
+      </div>
+      <!-- 에러시 에러 문구 노출 -->
+      <p class="text-error">다시 입력해주세요.</p>
+    </div>
+
+
+    <div class="expended-textfield">
+      <textarea name="" id="" cols="30" rows="10" placeholder="텍스트입력"></textarea>
+      <p class="text-counter"><strong>7</strong> / 100</p>
+    </div>
+
+
+    <div class="select-bundles">
+      <div class="select-wrap">
+        <div class="text-selectLabel">셀렉트박스</div>
+        <div class="selected">
+          <div class="selected-value">00시</div>
+          <div class="arrow"><img src="./src/images/ic_ArrowUp.png" alt=""></div>
+        </div>
+        <ul>
+          <li class="option">00시</li>
+          <li class="option">01시</li>
+          <li class="option">02시</li>
+          <li class="option">03시</li>
+          <li class="option">04시</li>
+          <li class="option">05시</li>
+        </ul>
+      </div>
+      <div class="select-wrap">
+        <div class="text-selectLabel">&nbsp;</div>
+        <div class="selected">
+          <div class="selected-value">00분</div>
+          <div class="arrow"><img src="./src/images/ic_ArrowUp.png" alt=""></div>
+        </div>
+        <ul>
+          <li class="option">00분</li>
+          <li class="option">01분</li>
+          <li class="option">02분</li>
+          <li class="option">03분</li>
+          <li class="option">04분</li>
+          <li class="option">05분</li>
+        </ul>
+      </div>
+    </div>
   </div>
+
+
   <script type="module" src="/main.js"></script>
 </body>
 

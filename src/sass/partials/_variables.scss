@@ -4,15 +4,40 @@ $transition: all 0.3s ease-in-out;
 
 // 컬러
 :root {
-    --color-primary: #FBC02D;
-    --color-secondary: #2ECC71;
+    --color-primary: #2ECC71;
+    --color-secondary: #FBC02D;
+    --color-error: #FF2A31;
     --color-sub: #9999FF;
-    --color-lightTheme-text:#212121;
-    --color-darkTheme-text: #F5F5F5;
-    --color-lightTheme-bg: #ffffff;
-    --color-darkTheme-bg: #424242;
-
-    --color-light-gray: #cccccc;
+    --color-text: #212121;
+    --color-basic: #ffffff;
+    --color-light-gray: #eeeeee;
     --color-gray: #444444;
     --color-black: #1a1a1a;
+}
+
+
+body {
+    &.lightMode {
+        --color-primary: #2ECC71;
+        --color-secondary: #FBC02D;
+        --color-error: #FF2A31;
+        --color-sub: #9999FF;
+        --color-text: #212121;
+        --color-basic: #ffffff;
+        --color-light-gray: #eeeeee;
+        --color-gray: #444444;
+        --color-black: #1a1a1a;
+    }
+
+    &.darkMode {
+        --color-primary: #30e47b;
+        --color-secondary: #facf61;
+        --color-error: #FF2A31;
+        --color-sub: #c4c4fa;
+        --color-text: #d7d6d6;
+        --color-basic: #2f3133;
+        --color-light-gray: #525151;
+        --color-gray: #f1f1f1;
+        --color-black: #ffffff;
+    }
 }
