@@ -404,15 +404,17 @@ button {
 .tab-container {
     position: relative;
     width: 100%;
-    border-bottom: 1px solid #cccccc;
-    .tab-wrap {
+    
+    .tab-head {
         display: flex;
         align-items: center;
         position: relative;
         width: 100%;
+        border-bottom: 1px solid #cccccc;
         .tab-item {
             width: auto;
             padding: 8px 14px;
+            cursor: pointer;
             span {
                 position: relative;
                 &:after {
@@ -424,7 +426,8 @@ button {
                     content: '';
                     width: 100%;
                     height: 2px;
-                    background: var(--color-black);        
+                    background: var(--color-black);      
+                    transition: all 0.6s ease-in-out;  
                 }
             }
             &.on {
@@ -433,6 +436,24 @@ button {
                         display: block;
                     }
                 }
+            }
+        }
+    }
+
+    .tab-body {
+        position: relative;
+        width: 100%;
+
+        .tab-contents {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background: var(--color-basic);
+            padding: 14px;
+            &.on {
+                display: block;
             }
         }
     }

@@ -56,3 +56,23 @@ document.addEventListener("click", function (e) {
     });
 });
 
+
+// 탭
+const tabItem = document.querySelectorAll(".tab-item");
+const tabContents = document.querySelectorAll(".tab-contents");
+
+
+tabItem.forEach((tab, idx)=> {
+    tab.addEventListener('click', function(){
+        tabContents.forEach((inner)=> {
+            inner.classList.remove('on')
+        })
+
+        tabItem.forEach((item)=> {
+            item.classList.remove('on')
+        })
+
+        tabItem[idx].classList.add('on')
+        tabContents[idx].classList.add('on')
+    })
+})
